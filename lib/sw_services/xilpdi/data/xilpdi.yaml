@@ -1,0 +1,23 @@
+# Copyright (C) 2023 Advanced Micro Devices, Inc.  All rights reserved.
+# Copyright (c) 2021 Xilinx, Inc.  All rights reserved.
+# SPDX-License-Identifier: MIT
+%YAML 1.2
+---
+title: Bindings for xilffs library.
+
+maintainers:
+  - Appana Durga Kedareswara Rao <appanad.durga.rao@xilinx.com>
+
+type: library
+
+version: 1.7
+
+description: Xilinx Programmable Device Image (PDI) Library.
+
+supported_processors:
+  - psv_cortexa72
+  - psv_cortexr5
+  - psv_pmc
+
+supported_os:
+  - standalone

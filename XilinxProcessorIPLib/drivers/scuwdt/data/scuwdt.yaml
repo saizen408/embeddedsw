@@ -1,0 +1,34 @@
+# Copyright (C) 2023 Advanced Micro Devices, Inc.  All rights reserved.
+# Copyright (c) 2021 Xilinx, Inc.  All rights reserved.
+# SPDX-License-Identifier: MIT
+%YAML 1.2
+---
+title: Bindings for scuwdt driver
+
+maintainers:
+  - Mubin Usman Sayyed <mubin.usman.sayyed@xilinx.com>
+
+type: driver
+
+properties:
+  compatible:
+    OneOf:
+      - items:
+        - enum:
+          - arm,cortex-a9-twd-wdt-timer
+  reg:
+    description: Physical base address and size of the scuwdt controller map
+
+config:
+    - XScuWdt_Config 
+ 
+required:
+    - compatible
+    - reg
+    - interrupts
+    - interrupt-parent
+
+examples:
+   xscuwdt_intr_example.c:
+    - interrupts
+

@@ -1,0 +1,30 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2021 Xilinx, Inc.  All rights reserved.
+%YAML 1.2
+---
+title: Bindings for freertos bsp
+
+maintainers:
+  - Appana Durga Kedareswara Rao <appanad.durga.rao@xilinx.com>
+
+type: os
+
+version: 1.14
+
+properties:
+  reg:
+    description: Physical base address and size of the controller register map
+
+depends_libs:
+    xiltimer:
+        XILTIMER_en_interval_timer: ON
+
+depends:
+    tmrctr:
+        - reg
+        - interrupts
+    ttcps:
+        - reg
+    scugic:
+        - reg
+...

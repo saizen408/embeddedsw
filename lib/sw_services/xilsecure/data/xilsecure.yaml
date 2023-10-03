@@ -1,0 +1,27 @@
+# Copyright (C) 2023 Advanced Micro Devices, Inc.  All rights reserved.
+# Copyright (c) 2021 Xilinx, Inc.  All rights reserved.
+# SPDX-License-Identifier: MIT
+%YAML 1.2
+---
+title: Bindings for xilsecure library.
+
+maintainers:
+  - Appana Durga Kedareswara Rao <appanad.durga.rao@xilinx.com>
+
+type: library
+
+version: 5.1
+
+description: Xilinx Secure Library provides interface to AES, RSA and SHA hardware engines on ZynqMP Soc and Versal.
+
+supported_processors:
+  - psu_cortexa53
+  - psu_cortexr5
+  - psv_cortexa72
+  - psv_cortexr5
+  - psu_pmu
+  - psv_pmc
+
+supported_os:
+  - standalone
+  - freertos10_xilinx

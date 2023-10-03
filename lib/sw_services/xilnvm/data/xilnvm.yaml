@@ -1,0 +1,27 @@
+# Copyright (C) 2023 Advanced Micro Devices, Inc.  All rights reserved.
+# Copyright (c) 2021 Xilinx, Inc.  All rights reserved.
+# SPDX-License-Identifier: MIT
+%YAML 1.2
+---
+title: Bindings for xilnvm library.
+
+maintainers:
+  - Appana Durga Kedareswara Rao <appanad.durga.rao@xilinx.com>
+
+type: library
+
+version: 3.1
+
+description: Xilinx NVM Library provides interface to accessing eFUSE and BBRAM of Versal.
+
+supported_processors:
+  - psv_cortexa72
+  - psv_cortexr5
+  - psv_pmc
+
+supported_os:
+  - standalone
+
+depends_libs:
+    xiltimer: {}
+    xilplmi: {}

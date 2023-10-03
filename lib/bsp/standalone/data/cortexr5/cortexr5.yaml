@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2021 Xilinx, Inc.  All rights reserved.
+%YAML 1.2
+---
+title: Bindings for cortexr5 cpu
+
+maintainers:
+  - Mubin Sayyed <mubin.usman.sayyed@xilinx.com>
+
+config:
+    - XCortexr5_Config
+
+properties:
+  compatible:
+    OneOf:
+      - items:
+        - enum:
+          - arm,cortex-r5
+
+required:
+    - access-val
+    - cpu-frequency
+    - reg
+...
+

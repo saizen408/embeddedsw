@@ -1,0 +1,5 @@
+/ {
+	amba_pl: amba_pl {
+		firmware-name = "vck190.pdi";
+	};
+};

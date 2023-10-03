@@ -1,0 +1,13 @@
+/******************************************************************************
+* Copyright (C) 2021 Xilinx, Inc.  All rights reserved.
+* SPDX-License-Identifier: MIT
+******************************************************************************/
+#ifndef XTTCPS_EXAMPLE_H
+#define XTTCPS_EXAMPLE_H
+
+#cmakedefine XTTCPS_BASEADDRESS @XTTCPS_BASEADDRESS@U
+#cmakedefine XTTCPS_COUNTER_NUM1 @XTTCPS_COUNTER_NUM1@U
+#cmakedefine XTTCPS_COUNTER_NUM2 @XTTCPS_COUNTER_NUM2@U
+
+#endif
+

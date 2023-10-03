@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2021 Xilinx, Inc.  All rights reserved.
+%YAML 1.2
+---
+title: Bindings for ARMv8 cpu
+
+maintainers:
+  - Mubin Sayyed <mubin.usman.sayyed@xilinx.com>
+
+config:
+    - XARMv8_Config
+
+properties:
+  compatible:
+    OneOf:
+      - items:
+        - enum:
+          - arm,cortex-a53
+          - arm,cortex-a72
+
+required:
+    - stamp-frequency
+    - cpu-frequency
+    - reg
+...
+

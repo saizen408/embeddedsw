@@ -1,0 +1,33 @@
+# Copyright (C) 2023 Advanced Micro Devices, Inc.  All rights reserved.
+# Copyright (c) 2021 Xilinx, Inc.  All rights reserved.
+# SPDX-License-Identifier: MIT
+%YAML 1.2
+---
+title: Bindings for CFU PMC controller
+
+maintainers:
+  - Appana Durga Kedareswara Rao <appanad.durga.rao@xilinx.com>
+
+type: driver
+
+config:
+    - XCfupmc_Config 
+
+properties:
+  compatible:
+    OneOf:
+      - items:
+        - enum:
+          - xlnx,psv-pmc-cfu-apb
+          - xlnx,cfu-apb-1.0
+          - xlnx,psv-pmc-cfu-apb-1.0
+  reg:
+    description: Physical base address and size of the controller register map
+
+config:
+    - XCfupmc_Config 
+
+required:
+    - compatible
+    - reg
+...
